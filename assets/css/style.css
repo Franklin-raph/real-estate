@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary: #1f3e72;
+    --secondary: rgba(255, 255, 255, .78);
+    --black: #131110;
+    --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+    --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+    --blue: #4066ff;
+    --lightBlue: #eeeeff;
+    --shadow: 0px 23px 21px -8px rgba(136, 160, 255, .25);
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: var(--black);
+}
+
+nav{
+    padding: 16px 24px;
+}
+
+nav ul{
+    list-style: none;
+    gap: 50px;
+}
+
+nav img{
+    width: 60%;
+}
+
+nav a{
+    color: var(--secondary);
+    font-size: 15px;
+}
+
+main {
+    padding: 2rem 6rem;
+}
+
+.main-text{
+    width: 44%;
+}
+
+main h1{
+    color: var(--lightBlue);
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.main-paragraph{
+    color: var(--secondary);
+    margin: 2.5rem 0;
+}
+
+.search-input{
+    background-color: #fff;
+    justify-content: flex-start !important;
+    padding: 12px 1rem;
+    gap: 10px;
+    border-radius: 3px;
+    border: 4px solid #dcdcdccf;
+}
+
+.search-input i{
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.search-input input{
+    all: unset;
+    width: 90%;
+    padding: 0px 10px;
+    height: 40px;
+    border: 1px solid #ededed;
+}
+
+.search-input button{
+    all: unset;
+    cursor: pointer;
+    padding: 8px 16px;
+    background: var(--blue-gradient);
+    color: var(--lightBlue);
+    border-radius: 4px;
+}
+
+.image-container{
+    width: 30rem;
+    height: 35rem;
+    border: 8px solid rgba(255, 255, 255, .12);
+    border-radius: 15rem 15rem 0 0;
+    overflow: hidden;
+}
+
+main img{
+    width: 100%;
+    height: 100%;
+}
+
+.numbers{
+    margin-top: 3.5rem;
+}
+
+.numbers div p:nth-of-type(1){
+    font-size: 30px;
+}
+
+.numbers div p:nth-of-type(1) span:nth-of-type(1){
+    color: #fff;
+}
+
+.numbers div p:nth-of-type(2){
+    color: var(--secondary);
+}
+
+.numbers div p:nth-of-type(1) span:nth-of-type(2){
+    color: orange;
+}
+
+.numbers div {
+    text-align: center;
+}
