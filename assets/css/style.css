@@ -18,6 +18,10 @@
     --orange-color: orange;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
 }
@@ -47,8 +51,9 @@ nav img{
 
 nav li:last-child{
     background-color: var(--blue);
-    padding: 7px 1.2rem;
+    padding: 6px 1.2rem;
     border-radius: 3px;
+    color: #fff;
     /* box-shadow: var(--shadow); */
 }
 
@@ -194,7 +199,7 @@ main img{
     font-weight: 600;
 }
 
-#bestChoices h1{
+#bestChoices h1, footer h1{
     color: var(--primary);
     font-size: 32px;
 }
@@ -236,7 +241,7 @@ main img{
     font-size: 1.3rem;
 }
 
-.residenceBox p{
+.residenceBox p, footer p{
     color: var(--secondary-text-color);
     font-size: .8rem;
 }
@@ -411,6 +416,8 @@ main img{
     background-color: var(--blue);
     padding: 2rem 0;
     margin: 3rem;
+    border-radius: 10px;
+    border: 6px solid #5d77d6;
 }
 
 #getStarted h1{
@@ -420,5 +427,100 @@ main img{
 }
 
 #getStarted p{
+    margin: 0;
+    padding: 0;
+}
+
+#getStarted p{
     color: #fff;
+}
+
+#getStarted p:nth-of-type(1){
+    margin: 30px 0 0;
+}
+
+#getStarted p:nth-of-type(2){
+    margin: 0 0 30px;
+}
+
+#getStarted button{
+    all: unset;
+    background-color: #5a73d7;
+    padding: .5rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #000;
+    margin-top: 6rem;
+}
+
+.form {
+    width: 25rem;
+    display: flex;
+}
+
+.form input{
+    all: unset;
+    width: 100%;
+    background-color: #fff;
+    padding: 7px 12px;
+    border-radius: 5px 0 0 5px;
+}
+
+.form button{
+    all: unset;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    background: var(--blue-gradient);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.form input::placeholder{
+    font-size: 12px;
+}
+
+.waitlist p{
+    font-size: 1rem;
+    margin: 0 0 5px;
+}
+
+footer ul{
+    list-style: none;
+    gap: 20px;
+}
+
+footer .links{
+    text-align: end;
+}
+
+footer ul li a{
+    color: var(--secondary-text-color);
+    font-size: 12px;
+}
+
+.backtotop{
+    background: var(--blue-gradient);
+    color: #fff;
+    padding: 2px 6px;
+    position: fixed;
+    bottom: -50px;
+    right: 10px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s;
 }
