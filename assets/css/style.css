@@ -38,6 +38,9 @@ header{
 
 nav{
     padding: 16px 24px;
+    width: 100%;
+    z-index: 99;
+    transition: .5s;
 }
 
 nav ul{
@@ -67,6 +70,7 @@ main {
 }
 
 .main-text{
+    position: relative;
     width: 44%;
 }
 
@@ -74,12 +78,33 @@ main h1{
     color: var(--lightBlue);
     font-size: 58px;
     font-weight: 600;
+    position: relative;
+    z-index: 2;
 }
 
 .main-paragraph{
     color: var(--secondary-text-color);
     font-weight: 300;
     margin: 2.5rem 0;
+}
+
+.bluryWhite{
+    position: absolute;
+    padding: 7rem;
+    background-color: #e4e4e4;
+    top: 70px;
+    left: 50px;
+    border-radius: 10px;
+    filter: blur(100px);
+}
+
+.orangeCirle{
+    position: absolute;
+    padding: 1.8rem;
+    border-radius: 50px;
+    background: var(--orange-gradient);
+    z-index: 1;
+    right: 70px;
 }
 
 .search-input{
