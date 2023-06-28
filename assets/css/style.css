@@ -14,6 +14,8 @@
     --blue: #4066ff;
     --lightBlue: #eeeeff;
     --shadow: 0px 23px 21px -8px rgba(136, 160, 255, .25);
+    --secondary-text-color: #8c8b8b;
+    --orange-color: orange;
 }
 
 a{
@@ -43,6 +45,13 @@ nav img{
     width: 60%;
 }
 
+nav li:last-child{
+    background-color: var(--blue);
+    padding: 7px 1.2rem;
+    border-radius: 3px;
+    /* box-shadow: var(--shadow); */
+}
+
 nav a{
     color: var(--secondary);
     font-size: 15px;
@@ -63,7 +72,8 @@ main h1{
 }
 
 .main-paragraph{
-    color: var(--secondary);
+    color: var(--secondary-text-color);
+    font-weight: 300;
     margin: 2.5rem 0;
 }
 
@@ -104,6 +114,16 @@ main h1{
     border: 8px solid rgba(255, 255, 255, .12);
     border-radius: 15rem 15rem 0 0;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.image-container img{
+    transition: .5s;
+}
+
+.image-container img:hover{
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 main img{
@@ -128,9 +148,277 @@ main img{
 }
 
 .numbers div p:nth-of-type(1) span:nth-of-type(2){
-    color: orange;
+    color: var(--orange-color);
 }
 
 .numbers div {
     text-align: center;
+}
+
+.numbers div p:last-child{
+    color: var(--secondary-text-color);
+}
+
+.clientsArea{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    justify-items: center;
+    margin: 2rem 0;
+}
+
+.clientsArea img{
+    width: 50%;
+    margin-bottom: 0 !important;
+}
+
+.clientsArea img:nth-child(2){
+    width: 47%;
+}
+
+.clientsArea img:first-child{
+    width: 40%;
+}
+
+#bestChoices{
+    padding: 3rem;
+}
+
+#bestChoices .header{
+    margin-bottom: 1.5rem;
+}
+
+#bestChoices .header h4{
+    color: var(--orange-color);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#bestChoices h1{
+    color: var(--primary);
+    font-size: 32px;
+}
+
+.residenceBoxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.residenceBox img{
+    width: 100%;
+}
+
+.residenceBox{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.residenceBox:hover{
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: var(--shadow);
+    background: linear-gradient(rgba(0, 217, 255, 0), #005eff18);
+}
+
+.residenceBoxes h4 span{
+    color: var(--orange-color);
+}
+
+.residenceBoxes h4{
+    color: var(--secondary-text-color);
+}
+
+.residenceBoxes h3{
+    margin: 5px 0;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.residenceBox p{
+    color: var(--secondary-text-color);
+    font-size: .8rem;
+}
+
+#values, #contact-section{
+    /* background: linear-gradient(rgba(0, 217, 255, 0), #005eff51); */
+    padding: 3rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+#values .image-container, #contact-section .image-container{
+    border: 8px solid #dce9ff;
+}
+
+#values img{
+    width: 110%;
+}
+
+.valueDetails{
+    width: 50%;
+}
+
+.valueDetails .header h4, .contactDetails .header h4{
+    color: var(--orange-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.valueDetails .header h1, .contactDetails .header h1{
+    color: var(--primary);
+    font-size: 34px;
+    margin: 7px 0;
+}
+
+.valueDetails .header p, .contactDetails .header p{
+    font-size: .9rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 3px;
+}
+
+.faqs{
+    margin-top: 3rem;
+}
+
+.faq{
+    margin-bottom: 1.5rem;
+    border: 1px solid #ededed;
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* transition: height .5s; */
+}
+
+.faqHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    cursor: pointer;
+    /* border: 1px solid #ededed; */
+    /* margin-bottom: 10px; */
+}
+
+.faqHeader h4{
+    color: var(--primary);
+    font-size: 16px;
+}
+
+.faq p{
+    font-size: .9rem;
+    color: var(--secondary-text-color);
+    display: none;
+}
+
+.faq.show p{
+    display: block;
+}
+
+.faq.shadow{
+    box-shadow: var(--shadow);
+}
+
+.faq i{
+    font-size: 17px;
+    color: var(--blue);
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: var(--lightBlue);
+}
+
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.contactDetails{
+    width: 45%;
+}
+
+.contact{
+    border: 1px solid #ededed;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.contactHeader{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactHeader i{
+    font-size: 22px;
+    background-color: var(--lightBlue);
+    color: var(--blue);
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.contact h4{
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.contact p{
+    color: var(--secondary-text-color);
+    font-size: 15px;
+}
+
+.contact button{
+    all: unset;
+    background-color: var(--lightBlue);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--blue);
+    transition: all 0.3s ease-in 0s;
+}
+
+.contact button:hover{
+    background: var(--blue-gradient);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: all 0.3s ease-in 0s;
+}
+
+.contact:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in 0s;
+    box-shadow: var(--shadow);
+}
+
+#contact-section img{
+    width: 100%;
+    height: 100vh;
+}
+
+#getStarted{
+    text-align: center;
+    background-color: var(--blue);
+    padding: 2rem 0;
+    margin: 3rem;
+}
+
+#getStarted h1{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#getStarted p{
+    color: #fff;
 }
