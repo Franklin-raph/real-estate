@@ -271,7 +271,6 @@ main img{
 }
 
 #values, #contact-section{
-    /* background: linear-gradient(rgba(0, 217, 255, 0), #005eff51); */
     padding: 3rem;
     display: flex;
     /* align-items: center; */
@@ -358,6 +357,67 @@ main img{
     padding: 8px 10px;
     border-radius: 5px;
     background-color: var(--lightBlue);
+}
+
+#whyChooseUs{
+    background: linear-gradient(rgba(0, 0, 0, 0.704), rgba(0, 0, 0, 0.704)),url('/assets/images/front-view-woman-holding-keys-her-new-house.jpg');
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    margin: 6rem 0 4rem;
+    background-attachment: fixed;
+}
+
+#whyChooseUs .header, #whyChooseUs .body{
+    width: 70%;
+}
+
+#whyChooseUs .header h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 8px 0 8px 16px;
+    border-left: 7px solid var(--orange-color);
+}
+
+#whyChooseUs .header p{
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#whyChooseUs .body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 3rem;
+}
+
+#whyChooseUs .body .choose{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#whyChooseUs .body .choose i{
+    font-size: 1.8rem;
+    background-color: #fff;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    color: var(--primary);
+}
+
+.fa-money-check-dollar, .fa-list-check{
+    padding: 1rem !important;
+}
+
+#whyChooseUs .body .choose h4{
+    color: #fff;
+}
+
+#whyChooseUs .body .choose p{
+    color: var(--secondary-text-color);
 }
 
 .contacts{
@@ -689,6 +749,10 @@ small{
     main{
         padding: 2rem 3rem;
     }
+
+    #whyChooseUs{
+        height: 80vh;
+    }
  }
 
  @media screen and (max-width:992px) {
@@ -735,6 +799,14 @@ small{
 
     footer{
         padding: 2rem;
+    }
+
+    #whyChooseUs{
+        height: 100%;
+    }
+
+    #whyChooseUs .body{
+        width: 90%;
     }
 
     .contacts{
@@ -799,6 +871,14 @@ small{
         margin: 3rem auto 0;
         width: 80%;
     }
+
+    #whyChooseUs{
+        padding: 1.5rem;
+    }
+
+    #whyChooseUs .body, #whyChooseUs .header{
+        width: 100%;
+    }
     
     .contacts{
         margin-bottom: 2rem;
@@ -842,6 +922,14 @@ small{
 
     .faqHeader h4{
         font-size: 14px;
+    }
+    
+    #whyChooseUs{
+        padding: 3rem;
+    }
+
+    #whyChooseUs .body{
+        grid-template-columns: 1fr;
     }
 
     .contacts{
