@@ -281,6 +281,10 @@ main img{
     border: 8px solid #dce9ff;
 }
 
+.image-container img{
+    object-fit: cover;
+}
+
 #values img{
     width: 110%;
 }
@@ -360,7 +364,7 @@ main img{
 }
 
 #whyChooseUs{
-    background: linear-gradient(rgba(0, 0, 0, 0.704), rgba(0, 0, 0, 0.704)),url('/assets/images/front-view-woman-holding-keys-her-new-house.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.704), rgba(0, 0, 0, 0.704)),url('/assets/images/new-home-keys-plan-table-with-defocused-couple.jpg');
     height: 75vh;
     background-position: center;
     background-size: cover;
@@ -418,6 +422,13 @@ main img{
 
 #whyChooseUs .body .choose p{
     color: var(--secondary-text-color);
+}
+
+#whyChooseUs span{
+    padding: 5px;
+    background-color: var(--orange-color);
+    border-radius: 50px;
+    display: inline-block;
 }
 
 .contacts{
@@ -923,9 +934,9 @@ small{
     .faqHeader h4{
         font-size: 14px;
     }
-    
-    #whyChooseUs{
-        padding: 3rem;
+
+    .choose p, #whyChooseUs .header p{
+        font-size: 12px;
     }
 
     #whyChooseUs .body{
