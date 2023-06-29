@@ -510,6 +510,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 7px;
+    font-size: 13px;
 }
 
 .form input::placeholder{
