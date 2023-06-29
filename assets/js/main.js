@@ -13,12 +13,17 @@ $(".owl-carousel").owlCarousel({
       nav: true,
       loop: true,
     },
-    700: {
+    600: {
       items: 2,
       nav: true,
       loop: true,
     },
-    1000: {
+    900: {
+        items: 3,
+        nav: true,
+        loop: true,
+      },
+    1200: {
       items: 4,
       nav: true,
       loop: true,
@@ -130,3 +135,13 @@ $(".counter").counterUp({
 });
 
 AOS.init();
+
+document.querySelector(".menu-icon").addEventListener("click", ()=> {
+    document.querySelector("nav ul").classList.toggle("shownav")
+})
+
+document.querySelectorAll("nav ul li a").forEach(navLink => {
+    navLink.addEventListener("click", ()=> {
+        document.querySelector("nav ul").classList.remove("shownav")
+    } )
+})

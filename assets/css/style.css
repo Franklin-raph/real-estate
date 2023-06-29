@@ -20,6 +20,7 @@
 
 html, body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a{
@@ -57,7 +58,6 @@ nav li:last-child{
     padding: 6px 1.2rem;
     border-radius: 3px;
     color: #fff;
-    /* box-shadow: var(--shadow); */
 }
 
 nav a{
@@ -575,7 +575,7 @@ footer ul li a{
 }
 
 .owl-carousel .owl-item{
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .login-modal-bg, .register-modal-bg{
@@ -679,4 +679,196 @@ small{
 .error::-webkit-input-placeholder, small {
     color: #970000;
     /* color: #01ffa2; */
+ }
+
+ .menu-icon{
+    display: none;
+ }
+
+ @media screen and (max-width:1200px) {
+    main{
+        padding: 2rem 3rem;
+    }
+ }
+
+ @media screen and (max-width:992px) {
+
+    nav ul{
+        gap: 30px;
+    }
+
+    main h1{
+        font-size: 40px;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .numbers div p:nth-of-type(1){
+        font-size: 20px;
+    }
+
+    .numbers div p:last-child{
+        font-size: 15px;
+    }
+
+    .image-container{
+        width: 20rem;
+        height: 35rem;
+    }
+
+    #values, #contact-section{
+        padding: 1.5rem;
+    }
+
+    #values img{
+        height: 100vh;
+    }
+
+    .form{
+        width: 18rem;
+    }
+
+    footer{
+        padding: 2rem;
+    }
+
+    .contacts{
+        gap: 10px;
+    }
+ }
+
+ @media screen and (max-width:768px) {
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        background-color: #fff;
+        top: 70px;
+        z-index: 999;
+        padding: 2rem 2.5rem;
+        right: -200px;
+        border-radius: 10px;
+        transition: .5s;
+        box-shadow: var(--shadow);
+    }
+
+    nav li:last-child a{
+        color: #fff;
+    }
+
+    nav ul.shownav{
+        right: 15px;
+    }
+
+    nav ul a{
+        color: #000;
+        font-weight: 500;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    main, #values, #contact-section, footer{
+        flex-direction: column;
+    }
+
+    .main-text{
+        width: 80%;
+    }
+
+    .image-container{
+        width: 30rem;
+        margin: auto;
+    }
+
+    .clientsArea{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .valueDetails .header, .contactDetails .header{
+        text-align: center;
+    }
+
+    .valueDetails, .contactDetails{
+        margin: 3rem auto 0;
+        width: 80%;
+    }
+    
+    .contacts{
+        margin-bottom: 2rem;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    footer, footer .links{
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .form input{
+        text-align: start;
+    }
+ }
+
+ @media screen and (max-width:576px) {
+    .image-container{
+        width: 100%;
+    }
+
+    main, #bestChoices{
+        padding: 2rem 1.5rem;
+    }
+
+    .main-text, .valueDetails, .contactDetails{
+        width: 100%;
+    }
+
+    #bestChoices .header h4{
+        font-size: 18px;
+    }
+
+    #bestChoices h1, footer h1, .valueDetails .header h1, .contactDetails .header h1{
+        font-size: 22px;
+    }
+
+    .faqHeader h4{
+        font-size: 14px;
+    }
+
+    .contacts{
+        grid-template-columns: 1fr;
+    }
+
+    #getStarted{
+        width: 90%;
+        margin: auto;
+    }
+
+    @media screen and (max-width:375px) {
+        #getStarted h1{
+            font-size: 22px;
+        }
+
+        #getStarted p{
+            font-size: 15px;
+        }
+    }
+
+    #values{
+        margin-top: 4rem;
+    }
+
+    .owl-nav{
+        bottom: -480px;
+        left: 35%;
+        /* right: 50%; */
+    }
  }
