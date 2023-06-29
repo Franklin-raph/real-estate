@@ -14,7 +14,8 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/owlcarousel.css">
+    <link rel="stylesheet" href="/assets/css/owlcarousel.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Real Estate</title>
   </head>
@@ -44,7 +45,7 @@
       </nav>
       <main class="flex-between">
         <div class="bluryWhite"></div>
-        <div class="main-text">
+        <div class="main-text" data-aos="fade-right" data-aos-delay="500">
           <div class="orangeCirle"></div>
           <h1>Discover Most Suitable Property</h1>
           <p class="main-paragraph">
@@ -58,34 +59,34 @@
           <div class="numbers flex-between">
             <div>
               <p>
-                <span>9,000</span>
+                <span class="counter">9,000</span>
                 <span>+</span>
               </p>
               <p>Premium Product</p>
             </div>
             <div>
               <p>
-                <span>2,000</span>
+                <span class="counter">2,000</span>
                 <span>+</span>
               </p>
               <p>Happy Customer</p>
             </div>
             <div>
               <p>
-                <span>28</span>
+                <span class="counter">28</span>
                 <span>+</span>
               </p>
-              <p>Awards Winning</p>
+              <p>Awards Won</p>
             </div>
           </div>
         </div>
-        <div class="image-container">
+        <div class="image-container" data-aos="fade-left" data-aos-delay="1000">
           <img src="/assets/images/hero-image.png" alt="" />
         </div>
       </main>
     </header>
 
-    <section class="clientsArea">
+    <section class="clientsArea" data-aos="fade-up" data-duration="2000">
       <img src="/assets/images/prologis.png" alt="" />
       <img src="/assets/images/tower.png" alt="" />
       <img src="/assets/images/equinix.png" alt="" />
@@ -214,13 +215,13 @@
             life better.
           </p>
         </div>
-        <div class="contacts">
+        <div class="contacts" data-aos="flip-left" data-aos-duration="2000">
           <div class="contact">
             <div class="contactHeader">
               <i class="ri-phone-fill"></i>
               <div>
                 <h4>Call</h4>
-                <p>021 123 145 14</p>
+                <p>08139362969</p>
               </div>
             </div>
             <button>Call Now</button>
@@ -230,7 +231,7 @@
               <i class="ri-message-3-fill"></i>
               <div>
                 <h4>Chat</h4>
-                <p>021 123 145 14</p>
+                <p>08139362969</p>
               </div>
             </div>
             <button>Call Now</button>
@@ -240,7 +241,7 @@
               <i class="ri-video-chat-line"></i>
               <div>
                 <h4>Video Call</h4>
-                <p>021 123 145 14</p>
+                <p>08139362969</p>
               </div>
             </div>
             <button>Call Now</button>
@@ -250,7 +251,7 @@
               <i class="ri-chat-2-fill"></i>
               <div>
                 <h4>Message</h4>
-                <p>021 123 145 14</p>
+                <p>08139362969</p>
               </div>
             </div>
             <button>Call Now</button>
@@ -258,16 +259,18 @@
         </div>
       </div>
 
-      <div class="image-container">
+      <div class="image-container" data-aos="flip-right" data-aos-duration="2000">
         <img src="/assets/images/contact.jpg" alt="" />
       </div>
     </section>
 
     <section id="getStarted">
-      <h1>Get started with Homyz</h1>
+      <h1 data-aos="fade-down">Get started with Homyz</h1>
       <p>Subscribe and find super attractive price quotes from us.</p>
       <p>Find your residence soon</p>
-      <button>Get Started</button>
+      <div data-aos="fade-up">
+        <button>Get Started</button>
+      </div>
     </section>
 
     <footer>
@@ -285,6 +288,7 @@
             <i class="ri-send-plane-fill"></i>
           </button>
         </div>
+        <small>Please enter a valid email address</small>
       </div>
       <div class="links">
         <h1>Information</h1>
@@ -310,8 +314,63 @@
       <i class="ri-arrow-up-s-fill"></i>
     </div>
 
-      <script src="/assets/js/jquery.js"></script>
+    <!-- login modal -->
+    <div class="login-modal-bg">
+      <form class="login">
+        <i class="ri-close-circle-fill" id="closeLoginForm"></i>
+        <div class="userIcon">
+          <i class="ri-user-3-line"></i>
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="text" placeholder="johndoe@gmail.com"/>
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" placeholder="******"/>
+        </div>
+        <div class="login-button">
+          <button>Login</button>
+          <p>Don't have an account? <span class="registerButton">Register</span> </p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Register modal -->
+    <div class="register-modal-bg">
+      <form class="login">
+        <i class="ri-close-circle-fill" id="closeRegForm"></i>
+        <div class="userIcon">
+          <i class="ri-user-add-line"></i>
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="text" placeholder="johndoe@gmail.com"/>
+        </div>
+        <div>
+          <label>Phone</label>
+          <input type="text" placeholder="08139362969"/>
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="text" placeholder="******"/>
+        </div>
+        <div>
+          <label>Confirm Password</label>
+          <input type="password" placeholder="******"/>
+        </div>
+        <div class="login-button">
+          <button>Register</button>
+          <p>Already have an account? <span class="LoginButton">Login</span> </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owlcarousel.js"></script>
+    <script src="/assets/js/counterup.js"></script>
+    <script src="/assets/js/waypoint.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
