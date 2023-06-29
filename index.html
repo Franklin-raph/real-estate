@@ -14,6 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/owlcarousel.css">
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Real Estate</title>
   </head>
@@ -96,7 +97,7 @@
         <h4>Best Choices</h4>
         <h1>Popular Residencies</h1>
       </div>
-      <div class="residenceBoxes">
+      <div class="residenceBoxes owl-carousel">
         <div class="residenceBox">
           <img src="/assets/images/r1.png" alt="" />
           <h4>
@@ -132,6 +133,24 @@
           </h4>
           <h3>Aliva Priva Jardin</h3>
           <p>Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta</p>
+        </div>
+        <div class="residenceBox">
+          <img src="/assets/images/r2.png" alt="" />
+          <h4>
+            <span>$</span>
+            66,353
+          </h4>
+          <h3>Asatti Garden City</h3>
+          <p>Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat</p>
+        </div>
+        <div class="residenceBox">
+          <img src="/assets/images/r3.png" alt="" />
+          <h4>
+            <span>$</span>
+            35,853
+          </h4>
+          <h3>Citralan Puri Serang</h3>
+          <p>Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten</p>
         </div>
       </div>
     </section>
@@ -253,14 +272,14 @@
 
     <footer>
       <div class="logoSection">
-        <img src="/assets/images/logo2.png" alt="">
+        <img src="/assets/images/logo2.png" alt="" />
         <p>Our vision is to make all people</p>
         <p>the best place to live for them.</p>
       </div>
       <div class="waitlist">
         <p>Join Our Wait List</p>
         <div class="form">
-          <input type="text" placeholder="johndoe@gmail.com">
+          <input type="text" placeholder="johndoe@gmail.com" />
           <button>
             <span>Submit</span>
             <i class="ri-send-plane-fill"></i>
@@ -291,7 +310,16 @@
       <i class="ri-arrow-up-s-fill"></i>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!-- Slider main container -->
+      <div class="my-slider">
+        <!-- Slides -->
+        <div>Slide 1</div>
+        <div>Slide 2</div>
+        <div>Slide 3</div>
+      </div>
+
+      <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/owlcarousel.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
