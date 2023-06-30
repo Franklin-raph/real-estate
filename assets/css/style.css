@@ -970,6 +970,11 @@ small{
         width: 100%;
     }
 
+    .two-col-div{
+        gap: 4rem;
+        margin-top: 2rem;
+    }
+
     #values, #contact-section{
         padding: 1.5rem;
     }
@@ -1095,6 +1100,11 @@ small{
 
     .numbers div i{
         font-size: 20px;
+    }
+
+    .two-col-div{
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .main-text, .valueDetails, .contactDetails{
