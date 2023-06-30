@@ -16,6 +16,7 @@
     --shadow: 0px 23px 21px -8px rgba(136, 160, 255, .25);
     --secondary-text-color: #8c8b8b;
     --orange-color: orange;
+    --greyish-bg: #FAFAFA;
 }
 
 html, body{
@@ -183,6 +184,11 @@ main img{
 
 .numbers div {
     text-align: center;
+}
+
+.numbers div i{
+    font-size: 30px;
+    color: var(--orange-color);
 }
 
 .numbers div p:last-child{
@@ -555,6 +561,53 @@ main img{
     transition: all ease-in-out .5s;
 }
 
+#client-reviews{
+    background-color: var(--greyish-bg);
+    padding: 2rem;
+}
+
+.client-review .desctiption{
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 14px;
+}
+
+.client-profile{
+    margin-left: 1rem;
+}
+
+.client-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.client-profile h4{
+    font-weight: 600;
+}
+
+.client-profile p{
+    color: var(--secondary-text-color);
+    font-size: 13px;
+}
+
+.arrow{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: rotate(45deg);
+}
+
+.client-review img{
+    width: 16% !important;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -919,6 +972,10 @@ small{
         padding: 2rem 1.5rem;
     }
 
+    .numbers div i{
+        font-size: 20px;
+    }
+
     .main-text, .valueDetails, .contactDetails{
         width: 100%;
     }
@@ -951,6 +1008,7 @@ small{
         width: 90%;
         margin: auto;
     }
+ }
 
     @media screen and (max-width:375px) {
         #getStarted h1{
@@ -960,15 +1018,22 @@ small{
         #getStarted p{
             font-size: 15px;
         }
+
+        #values{
+            margin-top: 4rem;
+        }
+    
+        .owl-nav{
+            bottom: -480px;
+            left: 35%;
+        }
+
+        #whyChooseUs .body .choose{
+            gap: 1rem;
+        }
+
+        #whyChooseUs .body .choose i{
+            font-size: 1.2rem;
+        }
     }
 
-    #values{
-        margin-top: 4rem;
-    }
-
-    .owl-nav{
-        bottom: -480px;
-        left: 35%;
-        /* right: 50%; */
-    }
- }

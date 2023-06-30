@@ -31,6 +31,43 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+$(".clients").owlCarousel({
+    items: 3,
+    loop: true,
+    autoplay: true,
+    margin: 30,
+    dots: true,
+    // arrows: true,
+    nav: false,
+    // navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        loop: true,
+      },
+      600: {
+        items: 2,
+        nav: false,
+        dots: true,
+        loop: true,
+      },
+      900: {
+          items: 3,
+          nav: false,
+          dots: true,
+          loop: true,
+        },
+      1200: {
+        items: 3,
+        nav: false,
+        dots: true,
+        loop: true,
+      },
+    },
+  });
+
 document.querySelectorAll(".faq").forEach((faq) => {
   faq.addEventListener("click", function () {
     faq.classList.toggle("show");
