@@ -182,3 +182,11 @@ document.querySelectorAll("nav ul li a").forEach(navLink => {
         document.querySelector("nav ul").classList.remove("shownav")
     } )
 })
+
+$('.grid').isotope({
+    // options...
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: 200
+    }
+  });

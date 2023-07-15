@@ -726,6 +726,14 @@ footer{
     margin-top: 6rem;
 }
 
+.footerText{
+    background-color: var(--black);
+    color: var(--secondary-text-color);
+    padding: .5rem;
+    font-size: 15px;
+    text-align: center;
+}
+
 .form {
     width: 25rem;
     display: flex;
@@ -987,6 +995,10 @@ small{
         width: 18rem;
     }
 
+    form{
+        width: 50%;
+    }
+
     footer{
         padding: 2rem;
     }
@@ -1139,6 +1151,10 @@ small{
         width: 90%;
         margin: auto;
     }
+
+    form{
+        width: 70%;
+    }
  }
 
     @media screen and (max-width:375px) {
@@ -1164,6 +1180,10 @@ small{
 
         #whyChooseUs .body .choose i{
             font-size: 1.2rem;
+        }
+
+        form{
+            width: 90%;
         }
     }
 
